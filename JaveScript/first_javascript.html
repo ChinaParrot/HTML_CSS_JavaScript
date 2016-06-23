@@ -3,14 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>JavaScript</title>
+</head>
+<body>
 
 <script type="text/javascript">
 //获取对象固定语法
 var object1 = document.getElementById("box1");
-//数组
+//数组:有序的数据结构
 var colors = ['red','green','blue','yellow'];
 //修改颜色对象
-object1.style.color = colors[0];
+
+var i = 0;
+
+object1.style.color = colors[1];
 
 function displayDate()
 {
@@ -18,10 +23,9 @@ function displayDate()
 }
 </script>
 
-</head>
-<body>
 <h1 id="box1">这个是我的第一JavaScript程序。</h1>
 <h1 id="box2">这个是我的第二JavaScript程序。</h1>
+
 <p id="demo">这是一个段落</p>
 <button tpye="button" onclick="displayDate()">显示日期</button>
 </body>

@@ -8,7 +8,7 @@
 
 <script type="text/javascript">
 //获取对象固定语法
-var object1 = document.getElementById("box1");
+var object1 = document.getElementById("box2");
 //数组:有序的数据结构
 var colors = ['red','green','blue','yellow'];
 //修改颜色对象
@@ -21,6 +21,16 @@ function displayDate()
 {
 	document.getElementById("demo").innerHTML=Date();
 }
+var i = -1;
+funtion F(){
+	if (i>4){
+		i = -1;
+	}
+	i = i + 1;
+	object1.style.color =colors[i];
+}
+setInterval(F,500)
+
 </script>
 
 <h1 id="box1">这个是我的第一JavaScript程序。</h1>

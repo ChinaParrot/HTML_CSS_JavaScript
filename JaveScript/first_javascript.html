@@ -2,15 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<!--  js <script src="index.js"></script> -->
 <title>JavaScript</title>
 </head>
 <body>
 
 <h1 id="box1">这个是我的第一JavaScript程序。</h1>
 <h1 id="box2">这个是我的第二JavaScript程序。</h1>
-
-<p id="demo">这是一个段落</p>
-<button tpye="button" onclick="displayDate()">显示日期</button>
+<button type="button" onclick="displayDate()">显示日期</button>
 
 <script type="text/javascript">
 //获取对象固定语法
@@ -18,29 +18,26 @@ var object1 = document.getElementById("box2");
 //数组:有序的数据结构
 var colors = ['red','green','blue','yellow'];
 //修改颜色对象
-
 var i = 0;
 
 object1.style.color = colors[1];
-
-/*
-function displayDate()
-{
-	#innerHTML 
-	document.getElementById("demo").innerHTML=Date();
-}
-*/
+//alert(box1.innerHTML);
 var i = -1;
-funtion F(){
+function F() {
 	if (i>4){
 		i = -1;
 	}
 	i = i + 1;
 	object1.style.color =colors[i];
 }
-setInterval(F,500)
+setInterval(F,500); //每0.5秒调用F函数
+//setInterval(F(),500);//立即调用
 
+function displayDate()
+{
+	document.getElementById("box1").innerHTML=Date();
+}
+//setInterval(displayDate,1000) 直接显示时间
 </script>
-
 </body>
 </html>

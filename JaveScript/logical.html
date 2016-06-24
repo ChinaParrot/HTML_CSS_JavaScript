@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>逻辑比较</title>
+</head>
+<body>
+<p>点击按钮检测年龄。</p>
+年龄：<input id="age" value="18" />
+<p>是否达到投票的年龄？</p>
+
+<button onclick="myFunction()"> 点击按钮 </button>
+<p id="demo"></p>
+
+<script type="text/javascript">
+function myFunction()
+{
+	//如果变量 age 中的值小于 18，则向变量 voteable 赋值 "年龄太小"，否则赋值 "年龄已达到"。
+	var age,voteable;
+	age=document.getElementById("age").value;
+	voteable=(age <18 )?"年龄小"："年龄已经达到 ";
+	document.getElementById("demo").innerHTML=voteable;
+}
+</script>
+</body>
+</html>

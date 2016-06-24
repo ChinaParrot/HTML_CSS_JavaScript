@@ -19,9 +19,28 @@ JavaScript 可以通过不同的方式来输出数据：
 <h1>我的第一个页面</h1>
 <p id="demo">我的第一个段落</p>
 
+<button onclick="myFunction()">点我</button>
+
 <script type="text/javascript">
 	window.alert("下面要修改段落");
 document.getElementById("demo").innerHTML="段落修改了";
+
+function myFunction(){
+/* 输出到整个页面 */
+	document.write(Date());
+}
+/*输出控制台  */
+
+var a = 1;
+var b = 1;
+var c = a + b;
+console.log(c);
+
+//===为绝对相等，即数据类型与值都必须相等
+var x = "John";              // x 是字符串
+var y = new String("John");  // y 是一个对象
+document.getElementById("demo").innerHTML = x===y;
+
 </script>
 </body>
 </html>

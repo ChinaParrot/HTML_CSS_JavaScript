@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+ul{
+	list-style:none;
+}
+
+ul li{
+	width: 200px;
+	height: 260px;
+	border: 2px #CCCC00 solid;/*边框*/
+	float: left;
+}
+
+@media (max-width:900px){
+li:nth-child(3){
+	display:none;
+}
+}

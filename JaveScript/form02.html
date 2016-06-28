@@ -8,10 +8,19 @@
 <script type="text/javascript">
 function validateForm(){
 	var x=document.forms["myForm"]["email"].value;
+	/*
+	indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置
+	注释：indexOf() 方法对大小写敏感！
+           注释：如果要检索的字符串值没有出现，则该方法返回 -1。
+	*/
 	var atpos=x.indexOf("@");
+/*  lastIndexOf() 方法可返回一个指定的字符串值最后出现的位置，在一个字符串中的指定位置从后向前搜索。
+           注释：lastIndexOf() 方法对大小写敏感！
+	注释：如果要检索的字符串值没有出现，则该方法返回 -1。 */
 	alert(atpos);
 	var dotpos=x.lastIndexOf(".");
 	alert(dotpos);
+    alert(x.length);
 	if(atpos<1||dotpos<atpos+2||dotpos+2>=x.length)
 		{
 		alert("Not a valid e-mail address");
